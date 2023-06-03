@@ -1,0 +1,84 @@
+.navbar {
+    width: 72%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 20px;
+    height: 70px;
+    margin-left: 13.2%;
+    background-color: #f2f2f2;
+    border-radius:12px
+
+  }
+  
+  .navbar-logo a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar-links li {
+    margin-right: 35px;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  
+  .book-button a {
+   font-family: 'Greycliff CF';
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+    margin-left:40px;
+    padding: 9px 24px 11px 24px;
+    background-color:#008080;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  
+  .mobile-menu-icon {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu-drawer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-links {
+      display: none;
+    }
+  
+    .mobile-menu-icon {
+      display: block;
+    }
+  
+    .mobile-menu-drawer {
+      display: flex;
+    }
+  
+    .navbar {
+      justify-content: space-between;
+      margin-left: 0%;
+      width:90%;
+      border-radius: 0px;
+    }
+}
+  
